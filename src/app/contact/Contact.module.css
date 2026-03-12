@@ -1,0 +1,233 @@
+.main {
+  background-color: #050a10; /* Enforce site dark theme */
+  min-height: 100vh;
+  color: white;
+}
+
+.hero {
+  padding: 12rem 0 6rem;
+  background: radial-gradient(circle at top right, rgba(0, 137, 161, 0.15), transparent 50%),
+              radial-gradient(circle at bottom left, rgba(247, 148, 29, 0.1), transparent 50%);
+  text-align: center;
+}
+
+.tag {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  color: white;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contactSection {
+  padding: 4rem 0 10rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.infoCard {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  padding: 3.5rem;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.3);
+}
+
+.infoCard h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-weight: 900;
+}
+
+.infoCard p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.infoItems {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.infoItem {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.iconBox {
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 137, 161, 0.2);
+  color: #00d2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  flex-shrink: 0;
+  border: 1px solid rgba(0, 137, 161, 0.3);
+}
+
+.infoItem h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  color: white;
+  font-weight: 800;
+}
+
+.infoItem p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 500 !important;
+  font-style: normal;
+}
+
+.formSection {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  padding: 4rem;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.3);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.formGroup label {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #00d2ff;
+  box-shadow: 0 0 0 4px rgba(0, 210, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Custom Select Arrow Styling */
+.formGroup select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1.25rem center;
+}
+
+.submitBtn {
+  background: var(--primary-teal);
+  color: white;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 16px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  margin-top: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 137, 161, 0.2);
+}
+
+.submitBtn:hover {
+  background: #00d2ff;
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 137, 161, 0.4);
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 10rem 0 4rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+  
+  .infoCard, .formSection {
+    padding: 2rem;
+    border-radius: 30px;
+  }
+}
