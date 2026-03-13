@@ -189,7 +189,7 @@
 @media (max-width: 768px) {
   .hero {
     min-height: auto;
-    padding: 8rem 0 10rem; /* Increased bottom padding for dots */
+    padding: 6rem 0 8rem; /* Reduced from 8rem/10rem for a more compact look */
   }
   
   .content {
@@ -228,6 +228,6 @@
   }
 
   .navDots {
-    bottom: 2rem; /* Move dots lower on mobile */
+    bottom: 1.5rem; /* Moved further down (was 2rem) */
   }
 }
