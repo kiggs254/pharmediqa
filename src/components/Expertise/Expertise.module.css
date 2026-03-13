@@ -141,17 +141,23 @@
 }
 
 .iconWrapper {
-  width: 70px;
-  height: 70px;
+  width: 80px; /* Increased from 70px */
+  height: 80px; /* Increased from 70px */
   background: rgba(0, 137, 161, 0.2);
   color: #00d2ff;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
-  margin-bottom: 1.5rem;
+  border-radius: 24px; /* Slightly more rounded */
+  margin-bottom: 2rem;
   border: 1px solid rgba(0, 137, 161, 0.4);
   box-shadow: 0 0 30px rgba(0, 137, 161, 0.2);
+}
+
+.iconWrapper svg {
+  width: 36px; /* Controlled size */
+  height: 36px;
+  transition: transform 0.3s ease;
 }
 
 .pillarTitle {
@@ -269,9 +275,15 @@
   }
 
   .iconWrapper {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 0.75rem;
+    width: 55px; /* Increased from 40px */
+    height: 55px;
+    margin-bottom: 1.25rem;
+    border-radius: 16px;
+  }
+
+  .iconWrapper svg {
+    width: 24px; /* Reduced to fit background on mobile */
+    height: 24px;
   }
 
   .pillarTitle {
