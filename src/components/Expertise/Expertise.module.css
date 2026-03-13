@@ -322,7 +322,7 @@
   }
 
   .cardWrapper {
-    padding-top: calc(var(--header-height) + 12rem); /* Add significant space between title and card */
+    padding-top: calc(var(--header-height) + 8rem); /* Reduced from 12rem to find a better balance */
   }
 
   .card {
