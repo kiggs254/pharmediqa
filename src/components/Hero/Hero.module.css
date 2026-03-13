@@ -189,7 +189,7 @@
 @media (max-width: 768px) {
   .hero {
     min-height: auto;
-    padding: 8rem 0;
+    padding: 8rem 0 10rem; /* Increased bottom padding for dots */
   }
   
   .content {
