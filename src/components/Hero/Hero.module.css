@@ -226,4 +226,8 @@
     padding: 1rem 2rem;
     font-size: 1rem;
   }
+
+  .navDots {
+    bottom: 2rem; /* Move dots lower on mobile */
+  }
 }
