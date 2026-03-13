@@ -322,7 +322,7 @@
   }
 
   .cardWrapper {
-    padding-top: calc(var(--header-height) + 8rem); /* Reduced from 12rem to find a better balance */
+    padding-top: calc(var(--header-height) + 4.5rem); /* Further reduced for a tighter fit */
   }
 
   .card {
