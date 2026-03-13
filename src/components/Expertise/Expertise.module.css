@@ -313,15 +313,16 @@
   }
 
   .headerWrapper {
-    padding-top: calc(var(--header-height) + 0.5rem);
+    top: 60px; /* Move header and title up closer to navbar */
+    padding-top: 0.5rem;
   }
 
   .headerWrapper .title {
-    font-size: 1.8rem;
+    font-size: 1.6rem; /* Slightly smaller for better fit */
   }
 
   .cardWrapper {
-    padding-top: calc(var(--header-height) + 6rem);
+    padding-top: calc(var(--header-height) + 12rem); /* Add significant space between title and card */
   }
 
   .card {
@@ -362,16 +363,20 @@
 }
 
 @media (max-width: 480px) {
+  .headerWrapper {
+    top: 50px;
+  }
+
   .headerWrapper .title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .cardWrapper {
-    padding-top: calc(var(--header-height) + 5rem);
+    padding-top: calc(var(--header-height) + 10rem);
   }
 
   .card {
-    height: 65vh; /* Slightly more height for content scaling */
+    height: 70vh; /* More height on very small screens since padding is tight */
     padding: 1rem;
   }
 
