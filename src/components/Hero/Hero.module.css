@@ -189,7 +189,7 @@
 @media (max-width: 768px) {
   .hero {
     min-height: auto;
-    padding: 3rem 0 6rem; /* Drastically reduced to pull content up */
+    padding: 3rem 0 12rem; /* Significantly increased bottom padding to create space for dots */
   }
   
   .content {
@@ -228,6 +228,6 @@
   }
 
   .navDots {
-    bottom: 1rem; /* Moved to absolute bottom */
+    bottom: 2rem; /* Moved dots into the extra padding area */
   }
 }
