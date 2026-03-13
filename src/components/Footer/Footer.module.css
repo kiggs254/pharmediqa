@@ -132,17 +132,40 @@
 
 @media (max-width: 768px) {
   .footer {
-    padding: 6rem 0 3rem;
+    padding: 4rem 0 2rem;
   }
   
   .top {
     grid-template-columns: 1fr;
-    gap: 4rem;
+    gap: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .brandDesc {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  .linksColumn h4, .contactColumn h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contactItem {
+    font-size: 0.95rem;
+    gap: 1rem;
   }
   
   .bottom {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     text-align: center;
+    padding-top: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .legal {
+    gap: 1.5rem;
+    flex-direction: column;
   }
 }

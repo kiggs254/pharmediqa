@@ -215,19 +215,69 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 10rem 0 4rem;
+    padding: 8rem 0 3rem;
   }
   
   .title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
   }
   
   .formRow {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
   
   .infoCard, .formSection {
-    padding: 2rem;
-    border-radius: 30px;
+    padding: 2rem 1.5rem;
+    border-radius: 24px;
+  }
+
+  .infoCard h3 {
+    font-size: 1.8rem;
+  }
+
+  .infoCard p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .infoItems {
+    gap: 1.5rem;
+  }
+
+  .iconBox {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+  }
+
+  .form {
+    gap: 1.5rem;
+  }
+
+  .formGroup input, .formGroup select, .formGroup textarea {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .submitBtn {
+    padding: 1.25rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .infoCard, .formSection {
+    padding: 1.5rem 1.25rem;
   }
 }

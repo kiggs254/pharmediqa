@@ -222,10 +222,70 @@
 
 @media (max-width: 768px) {
   .aboutTitle {
-    font-size: 2.5rem;
+    font-size: 1.8rem; /* Way smaller as requested */
+    margin-bottom: 1.5rem;
+  }
+
+  .aboutText {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .statItem h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .statItem p {
+    font-size: 0.85rem;
+  }
+
+  .glassCard {
+    padding: 1.5rem;
+    border-width: 2px;
+  }
+
+  .percentage {
+    font-size: 2.2rem;
+  }
+
+  .glassCardHeader {
+    margin-bottom: 1.5rem;
+    font-size: 0.75rem;
+  }
+
+  .glassCardContent {
+    margin-bottom: 1.5rem;
   }
   
+  .ctaBox {
+    padding: 3rem 1.5rem;
+    border-radius: 20px;
+  }
+
+  .ctaBox h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .ctaBox p {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
   .ctaButtons {
     flex-direction: column;
+    gap: 1rem;
+  }
+
+  .primaryCta, .secondaryCta {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1rem;
   }
 }
