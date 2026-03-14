@@ -82,10 +82,24 @@ const Expertise = () => {
     restDelta: 0.001
   });
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useLayoutEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 1024);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   // 5 pillars: Translate from 0% to -400vw equivalent
   // Since the track is 500vw, -80% is exactly 400vw.
   const x = useTransform(smoothProgress, [0, 1], ["0%", "-80%"]);
   const width = useTransform(smoothProgress, [0, 1], ["0%", "100%"]);
+
+  // On mobile, we don't want the horizontal transform
+  const xValue = isMobile ? "0%" : x;
 
   return (
     <section ref={targetRef} className={styles.scrollSection}>
@@ -102,7 +116,7 @@ const Expertise = () => {
           </div>
         </div>
         
-        <motion.div style={{ x }} className={styles.horizontalTrack}>
+        <motion.div style={{ x: xValue }} className={styles.horizontalTrack}>
           {pillars.map((pillar, index) => (
             <div key={index} className={styles.cardWrapper}>
               <div className={styles.card}>

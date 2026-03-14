@@ -248,16 +248,47 @@
 }
 
 @media (max-width: 1024px) {
+  .scrollSection {
+    height: auto !important;
+    padding-bottom: 5rem;
+  }
+
+  .stickyContainer {
+    position: relative;
+    height: auto;
+    overflow: visible;
+  }
+
+  .progressBarContainer {
+    display: none;
+  }
+
   .headerWrapper {
-    padding-top: calc(var(--header-height) + 1rem);
+    position: relative;
+    top: 0;
+    padding: 4rem 0 2rem;
+    pointer-events: auto;
+    background: transparent;
   }
   
   .title {
     font-size: 2.2rem;
   }
   
+  .horizontalTrack {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100% !important;
+    transform: none !important;
+    gap: 2rem;
+  }
+
   .cardWrapper {
-    padding-top: calc(var(--header-height) + 10rem);
+    width: 100%;
+    height: auto;
+    padding: 0;
+    justify-content: center;
   }
 
   .cardGrid {
@@ -267,10 +298,10 @@
   }
   
   .card {
-    height: 55vh; /* Fixed height to prevent overflow on medium screens */
+    height: auto;
     width: 90%;
     padding: 2.5rem;
-    overflow-y: hidden; /* Strongly aiming for no scroll */
+    overflow-y: visible;
     align-items: flex-start;
   }
 
@@ -341,10 +372,10 @@
 
   .card {
     width: 90%;
-    height: 60vh;
-    padding: 1.25rem;
+    height: auto;
+    padding: 1.5rem;
     border-radius: 20px;
-    overflow-y: hidden;
+    overflow-y: visible;
   }
 
   .pillarTitle {
@@ -391,8 +422,8 @@
   }
 
   .card {
-    height: 70vh; /* More height on very small screens since padding is tight */
-    padding: 1rem;
+    height: auto;
+    padding: 1.25rem;
   }
 
   .pillarTitle {
